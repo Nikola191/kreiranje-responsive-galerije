@@ -1,0 +1,43 @@
+*{ 
+    font-family: 'Times New Roman', sans-serif;
+ }
+ html{ 
+    background-color: rgb(252, 249, 249); }
+h1{
+    margin-left: 10px;
+}
+.galerija {
+    max-width: 960px;
+    width: 90%;
+     margin: 0 auto;
+ }
+ .row {
+   display : flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    }
+.column {
+     flex-basis: 20%;
+     box-sizing: border-box;
+     padding: 8px;
+        }
+.box {
+    
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    text-align: center;
+     }
+.box img{
+    max-width: 100%;
+    background-color: rgb(150, 150, 218);
+    border-radius:20px 20px 0px 0px ;
+}  @media screen and (max-width: 1024px) {
+    .column {
+    flex-basis: 33.33%;
+    }
+}
+    @media screen and (max-width: 400px) {
+        .column {
+        flex-basis: 100%;
+        }
+     }
